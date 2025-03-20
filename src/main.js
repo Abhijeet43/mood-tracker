@@ -90,7 +90,7 @@ function loadDataFromStorage() {
 function createEmoji(emoji, label) {
   const button = document.createElement("button");
   button.className = `mood-button group relative rounded-full p-2 sm:p-4 cursor-pointer ${
-    state.moodsData[0].emoji === emoji ? "bg-blue-50 ring-2 ring-blue-300" : ""
+    state.moodsData[0]?.emoji === emoji ? "bg-blue-50 ring-2 ring-blue-300" : ""
   }`;
   button.innerHTML = `<span class="text-4xl transition-transform duration-200 group-hover:scale-110">
               ${emoji}

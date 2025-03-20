@@ -107,9 +107,9 @@ function renderEventContent(eventInfo) {
   const mood = config.moods[emoji] || eventInfo.event.extendedProps.mood || "";
 
   return {
-    html: `<div class="flex items-center gap-1 px-1">
+    html: `<div class="flex items-center justify-center gap-1 px-1">
       <span class="text-lg">${emoji}</span>
-      <span class="text-md text-white">${mood}</span>
+      <span class="text-md hidden sm:inline text-white">${mood}</span>
     </div>`,
   };
 }
